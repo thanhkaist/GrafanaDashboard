@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  dcgm-exporter:
+    image: nvcr.io/nvidia/k8s/dcgm-exporter:4.1.1-4.0.4-ubuntu22.04
+    container_name: dcgm-exporter
+    restart: unless-stopped
+    runtime: nvidia
+    cap_add:
+      - SYS_ADMIN
+    ports:
+      - "9400:9400"
+    network_mode: host
+    expose:
+      - "9400"  # Expose port 9400 to allow Prometheus to scrape
