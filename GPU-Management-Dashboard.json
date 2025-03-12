@@ -261,7 +261,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
         "overrides": []
       },
@@ -726,13 +727,13 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "browser",
   "title": "GPU Mangagement",
   "uid": "aeflooqazvw8wf",
-  "version": 9,
+  "version": 10,
   "weekStart": ""
 }
